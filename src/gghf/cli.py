@@ -213,14 +213,63 @@ _config_app = typer.Typer(
 
 
 @_config_app.command()
+def init():
+    """Create a config.toml file with defaults and helpful comments.
+
+    The config file is written to ~/.config/gghf/config.toml (or the
+    path set in the GGHF_CONFIG_PATH environment variable).  All values
+    are commented out by default so you can uncomment and edit them.
+    """
+    cfg = Config()
+
+    config_dir = cfg.config_path.parent
+    config_dir.mkdir(parents=True, exist_ok=True)
+
+    # Build a commented TOML template with explanations
+    template = f"""# ═══════════════════════════════════════════════════════════
+# gghf Configuration
+# ═══════════════════════════════════════════════════════════
+#
+# This file controls where gghf stores your Hugging Face model
+# downloads and generated GGUF files.
+#
+#  • Un-comment any value you want to change (remove the leading #)
+#  • Paths use shell-tilde expansion — write ~/ or $HOME/
+#  • Leave it all commented to use the built-in defaults shown below
+#
+# ═══════════════════════════════════════════════════════════
+# storage_root  — base directory for downloaded HF repositories
+# hf_root       — where Hugging Face cached models are stored
+# gguf_root     — where converted GGUF files are written
+# hf_token      — your Hugging Face access token (required for private repos)
+# ═══════════════════════════════════════════════════════════
+#
+# storage_root = "/storage"                    # base dir for HF repos
+# hf_root      = "{cfg.hf_root}"              # HF cache directory
+# gguf_root    = "{cfg.gguf_root}"            # GGUF output directory
+# hf_token     = ""                            # HF access token (leave blank or set HF_TOKEN env var)
+#
+"""
+    cfg.config_path.write_text(template)
+    console.print(f"[green]✓[/green] Config written to [bold]{cfg.config_path}[/bold]")
+    console.print(f"[dim]Edit it to override defaults. All values are commented out.[/dim]")
+
+
+@_config_app.command()
 def show():
-    """Print current configuration."""
+    """Display the current configuration values."""
     cfg = Config()
     console.print("[bold]gghf Configuration[/bold]")
-    console.print(f"  Storage Root:     {cfg.storage_root}")
-    console.print(f"  HF Cache Root:    {cfg.hf_root}")
-    console.print(f"  GGUF Output Root: {cfg.gguf_root}")
-    console.print(f"  HF Token:         {'(set)' if cfg.hf_token else '(not set)'}")
+    console.print(f"  storage_root  : {cfg.storage_root}")
+    console.print(f"  hf_root       : {cfg.hf_root}")
+    console.print(f"  gguf_root     : {cfg.gguf_root}")
+    token_display = cfg.hf_token if not cfg.hf_token else f"{'*' * len(cfg.hf_token)}"
+    console.print(f"  hf_token      : {token_display or '(not set)'}")
+    console.print(f"  config_path   : {cfg.config_path}")
+    if not cfg.config_path.exists():
+        console.print("[dim]Note: No config file exists yet. Run 'gghf config init' to create one.[/dim]")
+    else:
+        console.print(f"[dim]Config file loaded from {cfg.config_path}[/dim]")
 
 
 app.add_typer(_config_app)

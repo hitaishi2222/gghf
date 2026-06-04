@@ -34,6 +34,10 @@ class Config:
     """
 
     def __init__(self, config_path: Optional[Path] = None) -> None:
+        # Allow env var override (useful for testing and deployment)
+        env_path = os.environ.get("GGHF_CONFIG_PATH")
+        if env_path:
+            config_path = Path(env_path)
         if config_path is None:
             config_path = Path.home() / ".config" / "gghf" / "config.toml"
         self.config_path: Path = config_path

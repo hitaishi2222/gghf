@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.eggs/
+.pytest_cache/
+dist/
+build/
+*.egg
+src/gghf/__pycache__/
+tests/__pycache__/

@@ -1,0 +1,206 @@
+{
+  "communities": {
+    "0": [
+      "gghf_config_config",
+      "gghf_config_config_save",
+      "gghf_config_rationale_10",
+      "gghf_config_rationale_90",
+      "src_gghf_config_py",
+      "tests_test_config_testconfigdefaults",
+      "tests_test_config_testconfigdefaults_test_default_config_dir",
+      "tests_test_config_testconfigdefaults_test_default_gguf_root",
+      "tests_test_config_testconfigdefaults_test_default_hf_root",
+      "tests_test_config_testconfigdefaults_test_default_hf_token_is_empty",
+      "tests_test_config_testconfigdefaults_test_default_logs_dir",
+      "tests_test_config_testconfigdefaults_test_default_storage_root"
+    ],
+    "1": [
+      "tests_test_config_py",
+      "tests_test_config_testconfigenvoverride",
+      "tests_test_config_testconfigenvoverride_test_env_token_overrides_config_file",
+      "tests_test_config_testconfigenvoverride_test_hf_token_from_env",
+      "tests_test_config_testconfigsaveandreload",
+      "tests_test_config_testconfigsaveandreload_test_save_creates_parent_dirs",
+      "tests_test_config_testconfigsaveandreload_test_save_to_toml_and_reload"
+    ],
+    "2": [
+      "context",
+      "gghf_cli_callback",
+      "gghf_cli_main",
+      "gghf_cli_main_menu",
+      "gghf_cli_rationale_32",
+      "src_gghf_cli_py"
+    ],
+    "3": [
+      "tests_test_cli_gghf_cmd",
+      "tests_test_cli_py",
+      "tests_test_cli_rationale_13",
+      "tests_test_cli_rationale_6",
+      "tests_test_cli_test_help_shows_gghf"
+    ],
+    "4": [
+      "path",
+      "tests_test_config_testconfigfromtoml",
+      "tests_test_config_testconfigfromtoml_test_load_from_config_file",
+      "tests_test_config_testconfigfromtoml_test_load_hf_token_from_config_file"
+    ],
+    "5": [
+      "gghf_config_config_init",
+      "gghf_config_config_load",
+      "gghf_config_rationale_106"
+    ],
+    "6": [
+      "gghf_config_config_hf_token",
+      "gghf_config_rationale_72",
+      "str"
+    ],
+    "7": [
+      "gghf_config_config_config_dir",
+      "gghf_config_rationale_81"
+    ],
+    "8": [
+      "gghf_config_config_gguf_root",
+      "gghf_config_rationale_61"
+    ],
+    "9": [
+      "gghf_config_config_hf_root",
+      "gghf_config_rationale_50"
+    ],
+    "10": [
+      "gghf_config_config_logs_dir",
+      "gghf_config_rationale_86"
+    ],
+    "11": [
+      "gghf_config_config_storage_root",
+      "gghf_config_rationale_39"
+    ],
+    "12": [
+      "tests_init_py"
+    ],
+    "13": [
+      "src_gghf_init_py"
+    ],
+    "14": [
+      "plan_md"
+    ]
+  },
+  "cohesion": {
+    "0": 0.25757575757575757,
+    "1": 0.2857142857142857,
+    "2": 0.4666666666666667,
+    "3": 0.5,
+    "4": 0.6666666666666666,
+    "5": 0.6666666666666666,
+    "6": 0.6666666666666666,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0
+  },
+  "gods": [
+    {
+      "id": "gghf_config_config",
+      "label": "Config",
+      "degree": 27
+    },
+    {
+      "id": "path",
+      "label": "Path",
+      "degree": 12
+    },
+    {
+      "id": "tests_test_config_testconfigdefaults",
+      "label": "TestConfigDefaults",
+      "degree": 8
+    },
+    {
+      "id": "tests_test_config_testconfigfromtoml",
+      "label": "TestConfigFromToml",
+      "degree": 4
+    },
+    {
+      "id": "tests_test_config_testconfigsaveandreload",
+      "label": "TestConfigSaveAndReload",
+      "degree": 4
+    },
+    {
+      "id": "tests_test_config_testconfigenvoverride",
+      "label": "TestConfigEnvOverride",
+      "degree": 4
+    },
+    {
+      "id": "tests_test_cli_gghf_cmd",
+      "label": "_gghf_cmd()",
+      "degree": 3
+    },
+    {
+      "id": "tests_test_cli_test_help_shows_gghf",
+      "label": "test_help_shows_gghf()",
+      "degree": 3
+    },
+    {
+      "id": "gghf_cli_main_menu",
+      "label": "_main_menu()",
+      "degree": 3
+    },
+    {
+      "id": "gghf_cli_main",
+      "label": "main()",
+      "degree": 3
+    }
+  ],
+  "surprises": [
+    {
+      "source": "TestConfigFromToml",
+      "target": "Config",
+      "source_files": [
+        "tests/test_config.py",
+        "src/gghf/config.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "TestConfigSaveAndReload",
+      "target": "Config",
+      "source_files": [
+        "tests/test_config.py",
+        "src/gghf/config.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "TestConfigEnvOverride",
+      "target": "Config",
+      "source_files": [
+        "tests/test_config.py",
+        "src/gghf/config.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "TestConfigDefaults",
+      "target": "Config",
+      "source_files": [
+        "tests/test_config.py",
+        "src/gghf/config.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

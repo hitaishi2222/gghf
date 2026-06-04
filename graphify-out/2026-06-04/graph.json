@@ -1,0 +1,1292 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "tests/__init__.py",
+      "source_location": "L1",
+      "community": 12,
+      "norm_label": "__init__.py",
+      "id": "tests_init_py"
+    },
+    {
+      "label": "test_cli.py",
+      "file_type": "code",
+      "source_file": "tests/test_cli.py",
+      "source_location": "L1",
+      "community": 3,
+      "norm_label": "test_cli.py",
+      "id": "tests_test_cli_py"
+    },
+    {
+      "label": "_gghf_cmd()",
+      "file_type": "code",
+      "source_file": "tests/test_cli.py",
+      "source_location": "L5",
+      "community": 3,
+      "norm_label": "_gghf_cmd()",
+      "id": "tests_test_cli_gghf_cmd"
+    },
+    {
+      "label": "test_help_shows_gghf()",
+      "file_type": "code",
+      "source_file": "tests/test_cli.py",
+      "source_location": "L12",
+      "community": 3,
+      "norm_label": "test_help_shows_gghf()",
+      "id": "tests_test_cli_test_help_shows_gghf"
+    },
+    {
+      "label": "Return the path to the gghf CLI, falling back to python -m.",
+      "file_type": "rationale",
+      "source_file": "tests/test_cli.py",
+      "source_location": "L6",
+      "community": 3,
+      "norm_label": "return the path to the gghf cli, falling back to python -m.",
+      "id": "tests_test_cli_rationale_6"
+    },
+    {
+      "label": "Test that gghf --help exits with code 0 and mentions 'gghf' in output.",
+      "file_type": "rationale",
+      "source_file": "tests/test_cli.py",
+      "source_location": "L13",
+      "community": 3,
+      "norm_label": "test that gghf --help exits with code 0 and mentions 'gghf' in output.",
+      "id": "tests_test_cli_rationale_13"
+    },
+    {
+      "label": "test_config.py",
+      "file_type": "code",
+      "source_file": "tests/test_config.py",
+      "source_location": "L1",
+      "community": 1,
+      "norm_label": "test_config.py",
+      "id": "tests_test_config_py"
+    },
+    {
+      "label": "TestConfigDefaults",
+      "file_type": "code",
+      "source_file": "tests/test_config.py",
+      "source_location": "L8",
+      "community": 0,
+      "norm_label": "testconfigdefaults",
+      "id": "tests_test_config_testconfigdefaults"
+    },
+    {
+      "label": ".test_default_config_dir()",
+      "file_type": "code",
+      "source_file": "tests/test_config.py",
+      "source_location": "L9",
+      "community": 0,
+      "norm_label": ".test_default_config_dir()",
+      "id": "tests_test_config_testconfigdefaults_test_default_config_dir"
+    },
+    {
+      "label": ".test_default_storage_root()",
+      "file_type": "code",
+      "source_file": "tests/test_config.py",
+      "source_location": "L13",
+      "community": 0,
+      "norm_label": ".test_default_storage_root()",
+      "id": "tests_test_config_testconfigdefaults_test_default_storage_root"
+    },
+    {
+      "label": ".test_default_hf_root()",
+      "file_type": "code",
+      "source_file": "tests/test_config.py",
+      "source_location": "L17",
+      "community": 0,
+      "norm_label": ".test_default_hf_root()",
+      "id": "tests_test_config_testconfigdefaults_test_default_hf_root"
+    },
+    {
+      "label": ".test_default_gguf_root()",
+      "file_type": "code",
+      "source_file": "tests/test_config.py",
+      "source_location": "L21",
+      "community": 0,
+      "norm_label": ".test_default_gguf_root()",
+      "id": "tests_test_config_testconfigdefaults_test_default_gguf_root"
+    },
+    {
+      "label": ".test_default_hf_token_is_empty()",
+      "file_type": "code",
+      "source_file": "tests/test_config.py",
+      "source_location": "L25",
+      "community": 0,
+      "norm_label": ".test_default_hf_token_is_empty()",
+      "id": "tests_test_config_testconfigdefaults_test_default_hf_token_is_empty"
+    },
+    {
+      "label": ".test_default_logs_dir()",
+      "file_type": "code",
+      "source_file": "tests/test_config.py",
+      "source_location": "L29",
+      "community": 0,
+      "norm_label": ".test_default_logs_dir()",
+      "id": "tests_test_config_testconfigdefaults_test_default_logs_dir"
+    },
+    {
+      "label": "TestConfigFromToml",
+      "file_type": "code",
+      "source_file": "tests/test_config.py",
+      "source_location": "L34",
+      "community": 4,
+      "norm_label": "testconfigfromtoml",
+      "id": "tests_test_config_testconfigfromtoml"
+    },
+    {
+      "label": ".test_load_from_config_file()",
+      "file_type": "code",
+      "source_file": "tests/test_config.py",
+      "source_location": "L35",
+      "community": 4,
+      "norm_label": ".test_load_from_config_file()",
+      "id": "tests_test_config_testconfigfromtoml_test_load_from_config_file"
+    },
+    {
+      "label": ".test_load_hf_token_from_config_file()",
+      "file_type": "code",
+      "source_file": "tests/test_config.py",
+      "source_location": "L50",
+      "community": 4,
+      "norm_label": ".test_load_hf_token_from_config_file()",
+      "id": "tests_test_config_testconfigfromtoml_test_load_hf_token_from_config_file"
+    },
+    {
+      "label": "TestConfigSaveAndReload",
+      "file_type": "code",
+      "source_file": "tests/test_config.py",
+      "source_location": "L60",
+      "community": 1,
+      "norm_label": "testconfigsaveandreload",
+      "id": "tests_test_config_testconfigsaveandreload"
+    },
+    {
+      "label": ".test_save_to_toml_and_reload()",
+      "file_type": "code",
+      "source_file": "tests/test_config.py",
+      "source_location": "L61",
+      "community": 1,
+      "norm_label": ".test_save_to_toml_and_reload()",
+      "id": "tests_test_config_testconfigsaveandreload_test_save_to_toml_and_reload"
+    },
+    {
+      "label": ".test_save_creates_parent_dirs()",
+      "file_type": "code",
+      "source_file": "tests/test_config.py",
+      "source_location": "L76",
+      "community": 1,
+      "norm_label": ".test_save_creates_parent_dirs()",
+      "id": "tests_test_config_testconfigsaveandreload_test_save_creates_parent_dirs"
+    },
+    {
+      "label": "TestConfigEnvOverride",
+      "file_type": "code",
+      "source_file": "tests/test_config.py",
+      "source_location": "L85",
+      "community": 1,
+      "norm_label": "testconfigenvoverride",
+      "id": "tests_test_config_testconfigenvoverride"
+    },
+    {
+      "label": ".test_hf_token_from_env()",
+      "file_type": "code",
+      "source_file": "tests/test_config.py",
+      "source_location": "L86",
+      "community": 1,
+      "norm_label": ".test_hf_token_from_env()",
+      "id": "tests_test_config_testconfigenvoverride_test_hf_token_from_env"
+    },
+    {
+      "label": ".test_env_token_overrides_config_file()",
+      "file_type": "code",
+      "source_file": "tests/test_config.py",
+      "source_location": "L94",
+      "community": 1,
+      "norm_label": ".test_env_token_overrides_config_file()",
+      "id": "tests_test_config_testconfigenvoverride_test_env_token_overrides_config_file"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "src/gghf/__init__.py",
+      "source_location": "L1",
+      "community": 13,
+      "norm_label": "__init__.py",
+      "id": "src_gghf_init_py"
+    },
+    {
+      "label": "cli.py",
+      "file_type": "code",
+      "source_file": "src/gghf/cli.py",
+      "source_location": "L1",
+      "community": 2,
+      "norm_label": "cli.py",
+      "id": "src_gghf_cli_py"
+    },
+    {
+      "label": "_main_menu()",
+      "file_type": "code",
+      "source_file": "src/gghf/cli.py",
+      "source_location": "L15",
+      "community": 2,
+      "norm_label": "_main_menu()",
+      "id": "gghf_cli_main_menu"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "src/gghf/cli.py",
+      "source_location": "L31",
+      "community": 2,
+      "norm_label": "main()",
+      "id": "gghf_cli_main"
+    },
+    {
+      "label": "callback()",
+      "file_type": "code",
+      "source_file": "src/gghf/cli.py",
+      "source_location": "L37",
+      "community": 2,
+      "norm_label": "callback()",
+      "id": "gghf_cli_callback"
+    },
+    {
+      "label": "Context",
+      "file_type": "code",
+      "source_file": "src/gghf/cli.py",
+      "source_location": "L37",
+      "community": 2,
+      "norm_label": "context",
+      "id": "context"
+    },
+    {
+      "label": "Launch the interactive gghf menu.",
+      "file_type": "rationale",
+      "source_file": "src/gghf/cli.py",
+      "source_location": "L32",
+      "community": 2,
+      "norm_label": "launch the interactive gghf menu.",
+      "id": "gghf_cli_rationale_32"
+    },
+    {
+      "label": "config.py",
+      "file_type": "code",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L1",
+      "community": 0,
+      "norm_label": "config.py",
+      "id": "src_gghf_config_py"
+    },
+    {
+      "label": "Config",
+      "file_type": "code",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L9",
+      "community": 0,
+      "norm_label": "config",
+      "id": "gghf_config_config"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L17",
+      "community": 5,
+      "norm_label": ".__init__()",
+      "id": "gghf_config_config_init"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L17",
+      "community": 4,
+      "norm_label": "path",
+      "id": "path"
+    },
+    {
+      "label": ".storage_root()",
+      "file_type": "code",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L38",
+      "community": 11,
+      "norm_label": ".storage_root()",
+      "id": "gghf_config_config_storage_root"
+    },
+    {
+      "label": ".hf_root()",
+      "file_type": "code",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L49",
+      "community": 9,
+      "norm_label": ".hf_root()",
+      "id": "gghf_config_config_hf_root"
+    },
+    {
+      "label": ".gguf_root()",
+      "file_type": "code",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L60",
+      "community": 8,
+      "norm_label": ".gguf_root()",
+      "id": "gghf_config_config_gguf_root"
+    },
+    {
+      "label": ".hf_token()",
+      "file_type": "code",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L71",
+      "community": 6,
+      "norm_label": ".hf_token()",
+      "id": "gghf_config_config_hf_token"
+    },
+    {
+      "label": "str",
+      "file_type": "code",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L71",
+      "community": 6,
+      "norm_label": "str",
+      "id": "str"
+    },
+    {
+      "label": ".config_dir()",
+      "file_type": "code",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L80",
+      "community": 7,
+      "norm_label": ".config_dir()",
+      "id": "gghf_config_config_config_dir"
+    },
+    {
+      "label": ".logs_dir()",
+      "file_type": "code",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L85",
+      "community": 10,
+      "norm_label": ".logs_dir()",
+      "id": "gghf_config_config_logs_dir"
+    },
+    {
+      "label": ".save()",
+      "file_type": "code",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L89",
+      "community": 0,
+      "norm_label": ".save()",
+      "id": "gghf_config_config_save"
+    },
+    {
+      "label": "._load()",
+      "file_type": "code",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L105",
+      "community": 5,
+      "norm_label": "._load()",
+      "id": "gghf_config_config_load"
+    },
+    {
+      "label": "Manage gghf configuration stored as TOML.      Defaults are read from a config f",
+      "file_type": "rationale",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L10",
+      "community": 0,
+      "norm_label": "manage gghf configuration stored as toml.      defaults are read from a config f",
+      "id": "gghf_config_rationale_10"
+    },
+    {
+      "label": "Root directory for HF repos and GGUF artifacts.",
+      "file_type": "rationale",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L39",
+      "community": 11,
+      "norm_label": "root directory for hf repos and gguf artifacts.",
+      "id": "gghf_config_rationale_39"
+    },
+    {
+      "label": "Root directory for cached Hugging Face repositories.",
+      "file_type": "rationale",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L50",
+      "community": 9,
+      "norm_label": "root directory for cached hugging face repositories.",
+      "id": "gghf_config_rationale_50"
+    },
+    {
+      "label": "Root directory for generated GGUF files.",
+      "file_type": "rationale",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L61",
+      "community": 8,
+      "norm_label": "root directory for generated gguf files.",
+      "id": "gghf_config_rationale_61"
+    },
+    {
+      "label": "Hugging Face access token.",
+      "file_type": "rationale",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L72",
+      "community": 6,
+      "norm_label": "hugging face access token.",
+      "id": "gghf_config_rationale_72"
+    },
+    {
+      "label": "Directory for gghf configuration files.",
+      "file_type": "rationale",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L81",
+      "community": 7,
+      "norm_label": "directory for gghf configuration files.",
+      "id": "gghf_config_rationale_81"
+    },
+    {
+      "label": "Directory for log files.",
+      "file_type": "rationale",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L86",
+      "community": 10,
+      "norm_label": "directory for log files.",
+      "id": "gghf_config_rationale_86"
+    },
+    {
+      "label": "Persist current configuration to TOML file.",
+      "file_type": "rationale",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L90",
+      "community": 0,
+      "norm_label": "persist current configuration to toml file.",
+      "id": "gghf_config_rationale_90"
+    },
+    {
+      "label": "Load TOML config from disk.",
+      "file_type": "rationale",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L106",
+      "community": 5,
+      "norm_label": "load toml config from disk.",
+      "id": "gghf_config_rationale_106"
+    },
+    {
+      "label": "gghf Core Implementation Plan",
+      "file_type": "document",
+      "source_file": "PLAN.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "gghf core implementation plan",
+      "id": "plan_md"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cli.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_cli_py",
+      "target": "tests_test_cli_gghf_cmd"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cli.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_cli_py",
+      "target": "tests_test_cli_test_help_shows_gghf"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cli.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_cli_rationale_6",
+      "target": "tests_test_cli_gghf_cmd"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cli.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_cli_test_help_shows_gghf",
+      "target": "tests_test_cli_gghf_cmd"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cli.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_cli_rationale_13",
+      "target": "tests_test_cli_test_help_shows_gghf"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_config.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_config_py",
+      "target": "tests_test_config_testconfigdefaults"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_config.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_config_py",
+      "target": "tests_test_config_testconfigenvoverride"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_config.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_config_py",
+      "target": "tests_test_config_testconfigfromtoml"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_config.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_config_py",
+      "target": "tests_test_config_testconfigsaveandreload"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/test_config.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "tests_test_config_testconfigdefaults",
+      "target": "gghf_config_config"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_config.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_config_testconfigdefaults",
+      "target": "tests_test_config_testconfigdefaults_test_default_config_dir"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_config.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_config_testconfigdefaults",
+      "target": "tests_test_config_testconfigdefaults_test_default_gguf_root"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_config.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_config_testconfigdefaults",
+      "target": "tests_test_config_testconfigdefaults_test_default_hf_root"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_config.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_config_testconfigdefaults",
+      "target": "tests_test_config_testconfigdefaults_test_default_hf_token_is_empty"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_config.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_config_testconfigdefaults",
+      "target": "tests_test_config_testconfigdefaults_test_default_logs_dir"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_config.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_config_testconfigdefaults",
+      "target": "tests_test_config_testconfigdefaults_test_default_storage_root"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_config.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "tests_test_config_testconfigdefaults_test_default_config_dir",
+      "target": "gghf_config_config"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_config.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "tests_test_config_testconfigdefaults_test_default_storage_root",
+      "target": "gghf_config_config"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_config.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "tests_test_config_testconfigdefaults_test_default_storage_root",
+      "target": "path"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_config.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "tests_test_config_testconfigdefaults_test_default_hf_root",
+      "target": "gghf_config_config"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_config.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "tests_test_config_testconfigdefaults_test_default_gguf_root",
+      "target": "gghf_config_config"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_config.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "tests_test_config_testconfigdefaults_test_default_hf_token_is_empty",
+      "target": "gghf_config_config"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_config.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "tests_test_config_testconfigdefaults_test_default_logs_dir",
+      "target": "gghf_config_config"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/test_config.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "tests_test_config_testconfigfromtoml",
+      "target": "gghf_config_config"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_config.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_config_testconfigfromtoml",
+      "target": "tests_test_config_testconfigfromtoml_test_load_from_config_file"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_config.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_config_testconfigfromtoml",
+      "target": "tests_test_config_testconfigfromtoml_test_load_hf_token_from_config_file"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_config.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "tests_test_config_testconfigfromtoml_test_load_from_config_file",
+      "target": "gghf_config_config"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_config.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "tests_test_config_testconfigfromtoml_test_load_from_config_file",
+      "target": "path"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_config.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "tests_test_config_testconfigfromtoml_test_load_hf_token_from_config_file",
+      "target": "gghf_config_config"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_config.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "tests_test_config_testconfigfromtoml_test_load_hf_token_from_config_file",
+      "target": "path"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/test_config.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "tests_test_config_testconfigsaveandreload",
+      "target": "gghf_config_config"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_config.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_config_testconfigsaveandreload",
+      "target": "tests_test_config_testconfigsaveandreload_test_save_creates_parent_dirs"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_config.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_config_testconfigsaveandreload",
+      "target": "tests_test_config_testconfigsaveandreload_test_save_to_toml_and_reload"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_config.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "tests_test_config_testconfigsaveandreload_test_save_to_toml_and_reload",
+      "target": "gghf_config_config"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_config.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "tests_test_config_testconfigsaveandreload_test_save_to_toml_and_reload",
+      "target": "path"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_config.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "tests_test_config_testconfigsaveandreload_test_save_creates_parent_dirs",
+      "target": "gghf_config_config"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_config.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "tests_test_config_testconfigsaveandreload_test_save_creates_parent_dirs",
+      "target": "path"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/test_config.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "tests_test_config_testconfigenvoverride",
+      "target": "gghf_config_config"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_config.py",
+      "source_location": "L94",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_config_testconfigenvoverride",
+      "target": "tests_test_config_testconfigenvoverride_test_env_token_overrides_config_file"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_config.py",
+      "source_location": "L86",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_config_testconfigenvoverride",
+      "target": "tests_test_config_testconfigenvoverride_test_hf_token_from_env"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_config.py",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "tests_test_config_testconfigenvoverride_test_hf_token_from_env",
+      "target": "gghf_config_config"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_config.py",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "tests_test_config_testconfigenvoverride_test_env_token_overrides_config_file",
+      "target": "gghf_config_config"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_config.py",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "tests_test_config_testconfigenvoverride_test_env_token_overrides_config_file",
+      "target": "path"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/cli.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_gghf_cli_py",
+      "target": "gghf_cli_callback"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/cli.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_gghf_cli_py",
+      "target": "gghf_cli_main"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/cli.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_gghf_cli_py",
+      "target": "gghf_cli_main_menu"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/cli.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_cli_callback",
+      "target": "gghf_cli_main_menu"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/cli.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_cli_main",
+      "target": "gghf_cli_main_menu"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/cli.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_cli_rationale_32",
+      "target": "gghf_cli_main"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/cli.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_cli_callback",
+      "target": "context"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_gghf_config_py",
+      "target": "gghf_config_config"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_config_config",
+      "target": "gghf_config_config_config_dir"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_config_config",
+      "target": "gghf_config_config_gguf_root"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_config_config",
+      "target": "gghf_config_config_hf_root"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_config_config",
+      "target": "gghf_config_config_hf_token"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_config_config",
+      "target": "gghf_config_config_init"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L105",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_config_config",
+      "target": "gghf_config_config_load"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_config_config",
+      "target": "gghf_config_config_logs_dir"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L89",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_config_config",
+      "target": "gghf_config_config_save"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_config_config",
+      "target": "gghf_config_config_storage_root"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_config_rationale_10",
+      "target": "gghf_config_config"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_config_config_init",
+      "target": "gghf_config_config_load"
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_config_config_init",
+      "target": "path"
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_config_config_config_dir",
+      "target": "path"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_config_config_gguf_root",
+      "target": "path"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_config_config_hf_root",
+      "target": "path"
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_config_config_logs_dir",
+      "target": "path"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_config_config_storage_root",
+      "target": "path"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_config_rationale_39",
+      "target": "gghf_config_config_storage_root"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_config_rationale_50",
+      "target": "gghf_config_config_hf_root"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_config_rationale_61",
+      "target": "gghf_config_config_gguf_root"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_config_config_hf_token",
+      "target": "str"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_config_rationale_72",
+      "target": "gghf_config_config_hf_token"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_config_rationale_81",
+      "target": "gghf_config_config_config_dir"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L86",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_config_rationale_86",
+      "target": "gghf_config_config_logs_dir"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_config_rationale_90",
+      "target": "gghf_config_config_save"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/gghf/config.py",
+      "source_location": "L106",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "gghf_config_rationale_106",
+      "target": "gghf_config_config_load"
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "e745f62613649e3071f91fcac054ce4cea57366d"
+}

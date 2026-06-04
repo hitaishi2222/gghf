@@ -6,6 +6,25 @@ import tomli
 import tomli_w
 
 
+def mask_token(token: Optional[str]) -> Optional[str]:
+    """Mask a token for safe display.
+
+    Short tokens (≤ 8 chars) are shown as ``***``.
+    Longer tokens show the first 5 characters, ``***``, and the last 4.
+
+    >>> mask_token("hf_sk_abc123def456ghi789")
+    'hf_s***789'
+    >>> mask_token("")
+    ''
+    >>> mask_token(None)
+    """
+    if token is None or token == "":
+        return token
+    if len(token) <= 8:
+        return "***"
+    return token[:5] + "***" + token[-4:]
+
+
 class Config:
     """Manage gghf configuration stored as TOML.
 

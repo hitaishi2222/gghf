@@ -32,12 +32,12 @@
 | 10   | UI Helpers        | ✅ Complete                                 | ✅ Pass | ?              |
 | 11   | Interactive Menu  | ✅ Complete                                 | ✅ Pass | ✅             |
 | 12   | Typer Subcommands | ✅ Complete                                 | ✅ Pass | ✅             |
-| 13   | Private Repos     | ⚠️ Partial — code exists, no explicit tests | ❌ Skip | ?              |
-| 14   | Storage Warning   | ❌ Not implemented                          | ❌ Skip | —              |
-| 15   | Integration Tests | ❌ Not implemented                          | ❌ Skip | —              |
+| 13   | Private Repos     | ✅ Complete                                 | ✅ Pass | ?              |
+| 14   | Storage Warning   | ✅ Complete                                 | ✅ Pass | —              |
+| 15   | Integration Tests | ✅ Complete                                 | ✅ Pass | —              |
 | 16   | Packaging         | ✅ Complete                                 | ✅ Pass | —              |
 
-**Current: 107 passing, 0 failing tests. Tasks 1–12 and 16 complete. Tasks 13–15 remaining.**
+**Current: 138 passing, 0 failing tests. All tasks complete.**
 
 ---
 
@@ -257,7 +257,7 @@
 - [ ] **Step 3:** Add `hf_token` to Config (stored as env var `HF_TOKEN` or config file). Update downloader to pass token to both CLI and API paths. Mask token in log output.
 - [ ] **Step 4:** Run tests and confirm they pass.
 
-> **Status: Partially done** — `hf_token` attribute exists in Config and is used by the downloader/menu. Explicit unit tests for token masking and private repo download are needed.
+> **Status: Complete** — `mask_token` utility, private repo token handling, and explicit tests in `test_private_repo.py` all passing.
 
 ---
 
@@ -274,7 +274,7 @@
 - [ ] **Step 3:** Implement `StorageWarning` check: calculate model repo size, estimate GGUF size (roughly model-size \* quantization-factor), compare with available disk space, prompt confirmation. Add custom exceptions in `exceptions.py` for `InsufficientStorage`, `ConversionFailed`.
 - [ ] **Step 4:** Run tests and confirm they pass.
 
-> **Status: Not implemented** — no `exceptions.py` exists yet. The menu calls `converter.estimate_gguf_size()` but no disk-space check is in place.
+> **Status: Complete** — `exceptions.py` with `InsufficientStorage` and `ConversionFailed`, plus `check_storage()` and `estimate_gguf_size()` in converter. All 11 tests passing.
 
 ---
 
@@ -291,7 +291,7 @@
 - [ ] **Step 3:** Mock `llama-cpp-python` and `huggingface_hub` to make tests run without actual downloads or conversions. Implement the test fixtures and test methods.
 - [ ] **Step 4:** Run tests and confirm they pass.
 
-> **Status: Not implemented** — `tests/integration/` directory does not exist yet.
+> **Status: Complete** — `tests/integration/test_workflow.py` with 13 integration tests covering the full workflow: add → check status → update → convert → verify backup → verify provenance. All tests pass with mocked HF and llama.cpp.
 
 ---
 
@@ -308,6 +308,6 @@
 - [ ] **Step 3:** Add missing pyproject.toml fields: readme, license, classifiers, python_requires, optional dependencies. Verify `pip install -e .` works.
 - [ ] **Step 4:** Run test and confirm it passes.
 
-> **Status: Partially done** — `pyproject.toml` has basic metadata but is missing readme, license, and classifiers.
+> **Status: Complete** — `pyproject.toml` includes readme, license, classifiers, python_requires, and optional dependencies. Verified with `pip install -e .` and `gghf --version`.
 
 ---

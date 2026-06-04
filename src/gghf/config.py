@@ -22,10 +22,10 @@ class Config:
         # Load file first
         data = self._load()
 
-        # Apply env overrides
-        self._storage_root: Optional[Path] = data.get("storage_root")
-        self._hf_root: Optional[Path] = data.get("hf_root")
-        self._gguf_root: Optional[Path] = data.get("gguf_root")
+        # Apply env overrides — coerce path-like strings to Path
+        self._storage_root: Optional[Path] = Path(data["storage_root"]) if data.get("storage_root") else None
+        self._hf_root: Optional[Path] = Path(data["hf_root"]) if data.get("hf_root") else None
+        self._gguf_root: Optional[Path] = Path(data["gguf_root"]) if data.get("gguf_root") else None
         self._hf_token: Optional[str] = data.get("hf_token")
         self._env_hf_token: Optional[str] = data.get("hf_token") or os.environ.get("GGHF_HF_TOKEN")
 
